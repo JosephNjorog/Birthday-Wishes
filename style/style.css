@@ -1,0 +1,306 @@
+/* Basic Reset */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  background-color: #f4f4f9;
+  overflow: hidden;
+}
+
+/* Container Styles */
+.container {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+  visibility: visible; /* Make sure the container is visible */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container div.six {
+  z-index: 1;
+}
+
+/* Background Animation */
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #ffebee;
+  }
+  25% {
+    background-color: #fce4ec;
+  }
+  50% {
+    background-color: #f3e5f5;
+  }
+  75% {
+    background-color: #e8eaf6;
+  }
+  100% {
+    background-color: #e0f7fa;
+  }
+}
+
+body {
+  animation: backgroundAnimation 15s infinite;
+}
+
+/* Typography */
+.one {
+  font-size: 4.5rem;
+  color: #ff6347;
+}
+
+.two {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: hsl(0, 0%, 40%);
+}
+
+.three {
+  font-size: 3rem;
+  color: #000000;
+}
+
+.four .text-box {
+  width: 600px;
+  margin: 0 auto;
+  border: 3px solid #aaa;
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-box p {
+  margin: 0;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.text-box .fake-btn {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  color: #fff;
+  background-color: rgb(21, 161, 237);
+  padding: 5px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.five p {
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+/* General styles for the idea section */
+.idea-1, .idea-2, .idea-3, .idea-4, .idea-5, .idea-6 {
+  margin: 0;
+  padding: 0;
+  color: #333; /* Default text color for readability */
+}
+
+/* Styling for idea-1 */
+.idea-1 {
+  font-size: 2rem;
+  color: #FF6F61; /* Coral color */
+}
+
+/* Styling for idea-2 */
+.idea-2 {
+  font-size: 2rem;
+  color: #3D84A8; /* Light blue color */
+}
+
+/* Styling for idea-3 */
+.idea-3 {
+  font-size: 2.5rem;
+  color: #FFB400; /* Vibrant yellow color */
+}
+
+.idea-3 strong {
+  padding: 3px 5px;
+  border-radius: 3px;
+  display: inline-block;
+  background-color: #ba07b7; /* Pink background */
+  color: #000; /* Black text color */
+}
+
+/* Styling for idea-4 */
+.idea-4 {
+  font-size: 2rem;
+  color: #4CAF50; /* Green color */
+}
+
+/* Styling for idea-5 */
+.idea-5 {
+  font-size: 4rem; /* Increased font size */
+  color: #ff9800; /* Orange color */
+}
+
+/* Styling for idea-6 */
+.idea-6 {
+  font-size: 6rem; /* Larger font size */
+  color: #ff5722; /* Red color */
+}
+
+.six {
+  position: relative;
+}
+
+.six img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.six .hat {
+  position: absolute;
+  width: 80px;
+  top: 50px;
+  left: -20%;
+  transform: translateX(-50%);
+  animation: bounceHat 2s infinite;
+}
+
+@keyframes bounceHat {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+/* Balloons Animation */
+.baloons img {
+  display: inline-block;
+  position: absolute;
+  animation: floatBalloons 6s ease-in-out infinite;
+}
+
+.baloons img:nth-child(even) {
+  left: -10%;
+}
+
+.baloons img:nth-child(odd) {
+  right: -10%;
+}
+
+.baloons img:nth-child(3n) {
+  left: 30%;
+}
+
+@keyframes floatBalloons {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* SVG Circles Animation */
+.eight svg {
+  width: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: visible; /* Make sure the SVGs are visible */
+  z-index: -1;
+}
+
+.eight svg:nth-child(1) { top: 7vh; left: 5vw; fill: #bd6ecf; }
+.eight svg:nth-child(2) { top: 23vh; left: 35vw; fill: #7dd175; }
+.eight svg:nth-child(3) { top: 33vh; left: 23vw; fill: #349d8b; }
+.eight svg:nth-child(4) { top: 43vh; left: 57vw; fill: #347a9d; }
+.eight svg:nth-child(5) { top: 68vh; left: 7vw; fill: #c66053; }
+.eight svg:nth-child(6) { top: 42vh; left: 77vw; fill: #bfaa40; }
+.eight svg:nth-child(7) { top: 68vh; left: 83vw; fill: #e3bae8; }
+.eight svg:nth-child(8) { top: 86vh; left: 37vw; fill: #8762cb; }
+.eight svg:nth-child(9) { top: 94vh; left: 87vw; fill: #9a90da; }
+
+.wish-hbd {
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+  color: #e91e63;
+}
+
+.wish h5 {
+  font-weight: lighter;
+  font-size: 2rem;
+  margin: 10px 0 0;
+  color: #009688;
+}
+
+.nine p {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #666;
+}
+
+#replay {
+  z-index: 3;
+  cursor: pointer;
+  color: #ff5722;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+
+  .four .text-box {
+    width: 90%;
+  }
+
+  .text-box .fake-btn {
+    right: 5px;
+    bottom: -38px;
+  }
+
+  .idea-5 span {
+    display: block;
+  }
+
+  .idea-6 {
+    font-size: 4rem;
+  }
+
+  .six .hat {
+    width: 50px;
+    top: -20px;
+  }
+
+  .wish-hbd {
+    font-size: 2.2em;
+  }
+
+  .wish h5 {
+    font-size: 1.4rem;
+  }
+
+  .nine p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+}

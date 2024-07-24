@@ -1,0 +1,21 @@
+- .gitignore
+- LICENSE
+- README.md
+- customize.json
+- img
+  - Love21.png
+  - ballon1.svg
+  - ballon2.svg
+  - ballon3.svg
+  - favicon.png
+  - hat.svg
+- index.html
+- package-lock.json
+- package.json
+- script
+  - main.js
+- src
+  - audio
+    -  Simi  Happy Birthday Ft Adekunle Gold  Deja Lyrics.mp3
+- style
+  - style.css
